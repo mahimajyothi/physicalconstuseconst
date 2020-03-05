@@ -7,11 +7,9 @@ public interface PhysicalConstants {
     float STANDAREDGRAVITATIONALACCELERATION=9.80665f;
 }
 package inheritance;
-import static inheritance.PhysicalConstants.SPEEDOFLIGHTINVACUUM;
-import static inheritance.PhysicalConstants.GRAVITATIONALCONSTANT;
-import static inheritance.PhysicalConstants.STANDAREDGRAVITATIONALACCELERATION;
+import inheritance.PhysicalConstants;
 
-public class UseConstants {
+public class UseConstants implements PhysicalConstants {
 	
 	public static void main(String args[])
 	{
@@ -30,6 +28,8 @@ public class UseConstants {
 		System.out.println("F="+F);
 		System.out.println("d="+d);
 				
+		
 	}
 
 }
+
